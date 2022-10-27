@@ -1,0 +1,6 @@
+<footer>Signed: <%= it.name %>
+</footer>
+
+</body>
+
+</html>

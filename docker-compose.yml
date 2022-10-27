@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+
+  traderplatform.expressapp:
+    image: traderplatform-expressapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - PORT=${PORT}
+    # volumes:
+    #   - type: bind
+    #     source: $(pwd)/dist
+    #     target: /www/dist
